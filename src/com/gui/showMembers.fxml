@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000000; -fx-background-image: url('/com/images/2.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.showMembersController">
+   <children>
+      <Button fx:id="cancelShowMembers" layoutX="973.0" layoutY="887.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="36.0" prefWidth="125.0" style="-fx-background-color: #D65A31;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="memberTable" layoutX="360.0" layoutY="202.0" prefHeight="587.0" prefWidth="1198.0">
+        <columns>
+            <TableColumn fx:id="MID" prefWidth="95.20001220703125" resizable="false" text="Member ID" />
+          <TableColumn fx:id="name" prefWidth="305.5999755859375" resizable="false" text="Name" />
+          <TableColumn fx:id="pon" prefWidth="244.5999755859375" resizable="false" text="Phone Number" />
+            <TableColumn fx:id="dob" prefWidth="227.2000732421875" resizable="false" text="Date Of Birth" />
+            <TableColumn fx:id="MT" prefWidth="199.60009765625" resizable="false" text="Membership Type" />
+            <TableColumn fx:id="TID" editable="false" minWidth="0.0" prefWidth="129.199951171875" resizable="false" text="Trainer ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="783.0" layoutY="79.0" prefHeight="70.0" prefWidth="354.0" text="Members Table" textFill="#d45731">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="789.0" layoutY="887.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="36.0" prefWidth="126.0" style="-fx-background-color: #D65A31;" text="Delete Selected" textFill="WHITE" />
+   </children>
+</AnchorPane>
